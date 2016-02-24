@@ -1,1 +1,2 @@
 jsonrpc=com.ofpay.dubbo.rpc.protocol.jsonrpc.JsonRpcProtocol
+dubboJsonrpc=com.ofpay.dubbo.rpc.protocol.jsonrpc.DubboJsonRpcProtocol
