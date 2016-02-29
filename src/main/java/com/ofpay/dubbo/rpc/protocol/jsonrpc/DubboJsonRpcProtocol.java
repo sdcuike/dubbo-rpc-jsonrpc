@@ -71,8 +71,11 @@ public class DubboJsonRpcProtocol extends AbstractProxyProtocol {
                 }
                 try {
                     skeleton.handle(request.getInputStream(), response.getOutputStream());
+
                 } catch (Throwable e) {
                     throw new ServletException(e);
+                } finally {
+                    MDC.clear();
                 }
             }
         }
